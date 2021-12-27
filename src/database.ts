@@ -1,4 +1,4 @@
-import { createPool } from 'mysql2';
+import { createPool } from 'mysql';
 import { promisify } from 'util'; 
 
 import { db } from './config';

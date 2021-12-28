@@ -4,11 +4,12 @@
   "description": "",
   "main": "./src/serve.js",
   "scripts": {
+    "start": "tsc && node ./dist/src/serve.js",
     "start-production": "cross-env npm run build && npm run serve",
     "build": "cross-env npm run clean && npm run build-ts",
     "clean": "cross-env rm -rf ./dist",
     "build-ts": "cross-env tsc --build",
-    "serve": "cross-env node ./src/serve.js",
+    "serve": "cross-env node -r dotenv/config ./dist/src/serve.js",
     "postinstall": "tsc",
     "dev": "ts-node-dev -r dotenv/config ./src/serve.ts",
     "test": "echo \"Error: no test specified\" && exit 1"

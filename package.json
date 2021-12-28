@@ -8,6 +8,7 @@
     "clean": "cross-env rm -rf ./dist",
     "build-ts": "cross-env tsc --build",
     "serve": "cross-env node -r ./dist/src/serve.js",
+    "postinstall": "tsc",
     "dev": "ts-node-dev -r dotenv/config ./src/serve.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

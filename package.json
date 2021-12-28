@@ -2,6 +2,7 @@
   "name": "vivernowcompanybackend",
   "version": "1.0.0",
   "description": "",
+  "main": "./src/serve.js",
   "scripts": {
     "start-production": "cross-env npm run build && npm run serve",
     "build": "cross-env npm run clean && npm run build-ts",
@@ -32,5 +33,6 @@
   },
   "engines": {
     "node": "14.x"
+
   }
 }

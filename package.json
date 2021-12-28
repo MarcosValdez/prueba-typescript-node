@@ -8,7 +8,7 @@
     "build": "cross-env npm run clean && npm run build-ts",
     "clean": "cross-env rm -rf ./dist",
     "build-ts": "cross-env tsc --build",
-    "serve": "cross-env node ./dist/src/serve.js",
+    "serve": "cross-env node ./src/serve.js",
     "postinstall": "tsc",
     "dev": "ts-node-dev -r dotenv/config ./src/serve.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,6 +29,7 @@
     "express": "^4.17.2",
     "mysql": "^2.18.1",
     "typescript": "^4.5.4",
+    "body-parser": "^1.19.1",
     "util": "^0.12.4"
   },
   "engines": {

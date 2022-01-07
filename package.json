@@ -8,9 +8,9 @@
     "build": "cross-env npm run clean && npm run build-ts",
     "clean": "cross-env rm -rf ./dist",
     "build-ts": "cross-env tsc --build",
-    "serve": "cross-env node ./dist/src/serve.js",
+    "serve": "cross-env node ./dist/src/app.js",
     "postinstall": "tsc",
-    "dev": "ts-node-dev -r dotenv/config ./src/serve.ts",
+    "dev": "ts-node-dev -r dotenv/config ./src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import { corsUrl, environment } from './config';
+import { corsUrl, environment, port } from './config';
 //import './database'; // initialize database
 import { NotFoundError, ApiError, InternalError } from './core/ApiError';
 import routesV1 from './routes/v1';
@@ -31,5 +31,10 @@ app.use((req, res, next) => next(new NotFoundError()));
     ApiError.handle(new InternalError(), res);
   }
 }); */
+
+app.listen(port, () => {
+    console.log(`http://localhost:${port}/api/v1`);
+  })
+  .on('error ', (e) => console.log(e));
 
 export default app;

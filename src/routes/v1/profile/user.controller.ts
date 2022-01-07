@@ -11,5 +11,5 @@ export async function getPortafolio(req: Request, res: Response): Promise<any> {
     }catch(err){
         console.log(err);
     } */
-    return res.json("sfsrsf")
+    return res.json("prueba 2.1")
 }

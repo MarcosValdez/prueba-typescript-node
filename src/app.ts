@@ -32,9 +32,9 @@ app.use((req, res, next) => next(new NotFoundError()));
   }
 }); */
 
-app.listen(port, () => {
+/* app.listen(port, () => {
     console.log(`http://localhost:${port}/api/v1`);
   })
-  .on('error ', (e) => console.log(e));
+  .on('error ', (e) => console.log(e)); */
 
 export default app;

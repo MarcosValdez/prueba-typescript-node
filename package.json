@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/serve.js",
   "scripts": {
-    "start": "cross-env npm run build && npm run serve",
+    "start": "node ./src/app.ts",
     "build": "cross-env npm run clean && npm run build-ts",
     "clean": "cross-env rm -rf ./dist",
     "build-ts": "cross-env tsc",

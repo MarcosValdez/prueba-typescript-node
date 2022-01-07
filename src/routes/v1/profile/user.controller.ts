@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { connect } from "../../../database";
+/* import { connect } from "../../../database";
 
 export async function getPortafolio(req: Request, res: Response): Promise<any> {
     try{
@@ -11,4 +11,4 @@ export async function getPortafolio(req: Request, res: Response): Promise<any> {
     }catch(err){
         console.log(err);
     }
-}
+} */

@@ -1,6 +1,6 @@
 import express from 'express';
 /* import apikey from '../../auth/apikey'; */
-import user from './profile/user';
+/* import user from './profile/user'; */
 
 const router = express.Router();
 
@@ -18,6 +18,6 @@ router.use('/blog', blogDetail);
 router.use('/writer/blog', writer);
 router.use('/editor/blog', editor);
 router.use('/profile', user); */
-router.use('/profile', user);
+/* router.use('/profile', user); */
 
 export default router;

@@ -1,5 +1,5 @@
 // Mapper for environment variables
-export const environment = process.env.NODE_ENV;
+/* export const environment = process.env.NODE_ENV;
 export const port = 3000;
 
 export const db = {
@@ -10,7 +10,7 @@ export const db = {
   connectionLimit: 10
 };
 
-export const corsUrl = process.env.CORS_URL;
+export const corsUrl = process.env.CORS_URL; */
 
 /* export const tokenInfo = {
   accessTokenValidityDays: parseInt(process.env.ACCESS_TOKEN_VALIDITY_SEC || '0'),

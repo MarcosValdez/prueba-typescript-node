@@ -1,16 +1,16 @@
 import express, { Request, Response, NextFunction } from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import { corsUrl, environment, port } from './config';
+/* import { corsUrl, environment, port } from './config'; */
 //import './database'; // initialize database
 import { NotFoundError, ApiError, InternalError } from './core/ApiError';
 import routesV1 from './routes/v1';
 
 const app = express();
-
+const port = 3000;
 app.use(bodyParser.json({ limit: '15mb' }));
 app.use(bodyParser.urlencoded({ limit: '15mb', extended: true, parameterLimit: 50000 }));
-app.use(cors({ origin: corsUrl, optionsSuccessStatus: 200 }));
+app.use(cors({ origin: "*", optionsSuccessStatus: 200 }));
 
 // Routes
 app.use('/api/v1', routesV1);

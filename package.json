@@ -7,8 +7,8 @@
     "start": "cross-env npm run build && npm run serve",
     "build": "cross-env npm run clean && npm run build-ts",
     "clean": "cross-env rm -rf ./dist",
-    "build-ts": "cross-env tsc --build",
-    "serve": "cross-env node ./dist/src/app.js",
+    "build-ts": "cross-env tsc",
+    "serve": "cross-env node ./src/app.ts",
     "dev": "ts-node-dev -r dotenv/config ./src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,4 +1,4 @@
-/* import { createPool } from 'mysql';
+import { createPool } from 'mysql';
 import { promisify } from 'util'; 
 
 import { db } from './config';
@@ -12,4 +12,4 @@ export async function connect() {
     }catch(e){
         console.error(e);
     }
-} */
+}

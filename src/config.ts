@@ -2,7 +2,7 @@
 /* export const environment = process.env.NODE_ENV; */
 export const port = process.env.PORT || 0;
 
-/* export const db = {
+export const db = {
   database: process.env.DB_NAME || '',
   host: process.env.DB_HOST || '',
   user: process.env.DB_USER || '',
@@ -10,7 +10,7 @@ export const port = process.env.PORT || 0;
   connectionLimit: 10
 };
 
-export const corsUrl = process.env.CORS_URL; */
+/* export const corsUrl = process.env.CORS_URL; */
 
 /* export const tokenInfo = {
   accessTokenValidityDays: parseInt(process.env.ACCESS_TOKEN_VALIDITY_SEC || '0'),
